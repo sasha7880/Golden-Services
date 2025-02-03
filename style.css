@@ -11,3 +11,28 @@ background: rgba(0, 0, 0, 0);
     --third-font: "RobotoSlab" , "sans-serif";
 
 }
+.header-logo {
+    color:#FED136;
+}
+.header-link {
+    color:#FED136;
+}
+.serices-description {
+    color: #777777;
+}
+.contact-imput {
+    color:#BBBBBB;
+}
+.contact-button {
+    color: #FFFFFF;
+    background-color: #FED136;
+}
+.contact {
+    background-color: #222222;
+}
+.service-subtitle {
+    color: #222222;
+}
+.services-title {
+    color: #222222;
+}
