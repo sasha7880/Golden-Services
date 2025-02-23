@@ -18,28 +18,31 @@
        --second-font: "Montserrat" , "sans-serif";
        --third-font: "RobotoSlab" , "sans-serif";
    }
-.header-logo {
-    color:#FED136;
+.container {
+    width: 942px;
+    margin: 0px auto;
 }
-.header-link {
-    color:#FED136;
+.header {
+    padding-top: 44px;
 }
-.serices-description {
-    color: #777777;
+.header-container {
+    display: flex;
+    justify-content: space-between;
 }
-.contact-imput {
-    color:#BBBBBB;
+.header-list {
+    display: flex;
+    gap: 10px ;
 }
-.contact-button {
-    color: #FFFFFF;
-    background-color: #FED136;
+.services-list {
+    display: flex;
+    justify-content: center;
+}
+.services {
+    padding-top: 109px;
+    padding-bottom: 119px;
+    display: flex;
 }
 .contact {
-    background-color: #222222;
-}
-.service-subtitle {
-    color: #222222;
-}
-.services-title {
-    color: #222222;
+    padding-top: 92px;
+    padding-bottom: 115px;
 }
