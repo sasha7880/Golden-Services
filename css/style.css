@@ -1,48 +1,193 @@
 :root {
-    --main-bg: rgba(255, 255, 255, 1);
-    --secondary-bg: rgba(34, 34, 34, 1);
-    --button-bg: rgba(254, 209, 54, 1);
-    --form-bg: rgba(204, 204, 204, 1);
-    /* -------------- */
-    --logo-colour: rgba(254, 209, 54, 1);
-    --icon-colour: rgba(254, 209, 54, 1);
-    --nav-colour: rgba(254, 209, 54, 1);
-    --main-title-colour: rgba(34, 34, 34, 1);
-    --secondary-title-colour: rgba(255, 255, 255, 1);
-    --subtitle-colour: rgba(34, 34, 34, 1);
-    --service-text-colour: rgba(119, 119, 119, 1);
-    --form-text-colour: rgba(187, 187, 187, 1);
-    --button-text-colour: rgba(255, 255, 255, 1);
-    /* ------------- */
-       --main-font: "Bilbo-Swash-Caps" , "sans-serif";
-       --second-font: "Montserrat" , "sans-serif";
-       --third-font: "RobotoSlab" , "sans-serif";
-   }
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "RobotoSlab", sans-serif;
+    --third-family: "DroidSerif", sans-serif;
+    --other-family: "Bilbo Swash Caps", sans-serif;
+    --header-text: rgba(254, 209, 54, 1);
+    --services-title: rgba(34, 34, 34, 1);
+    --servixes-description: rgba(119, 119, 119, 1);
+    --contact-title: rgba(255, 255, 255, 1);
+    --placeholder-color: rgba(187, 187, 187, 1);
+    --button-color: rgba(254, 209, 54, 1);
+
+}
+* {
+    box-sizing: border-box;
+  }
+
 .container {
     width: 942px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
+
 .header {
+    background-color: #00000000;
     padding-top: 44px;
+    padding-bottom: 109px;
+    padding-left: 137px;
+    padding-right: 130px;
 }
+
 .header-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+.header-navigation {
+    display:inline-block;
+    justify-content: center;
+    padding-left: 233px;
+    padding-right: 233px;
+}
+.logo-link {
+    width: 153px;
+    height: 53px;
+    top: -3px;
+    font-family: Bilbo Swash Caps;
+    font-weight: 400px;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--header-text);
+    padding-top: 17.5px;
+    padding-bottom: 272.3px;
+    padding-left: 356px;
+    padding-right: 255px;
+}
+
+
 .header-list {
     display: flex;
-    gap: 10px ;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
 }
+
+.header-link {
+    font-family: Montserrat;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 41px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--header-text);
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+/* H E A D E R   E N D  */
+
+
+
+
+
+
+
+
+
+
 .services-list {
     display: flex;
     justify-content: center;
 }
+
 .services {
     padding-top: 109px;
     padding-bottom: 119px;
     display: flex;
 }
+
 .contact {
+    width: 1404px;
+    height: 679px;
+    padding-top: 641px;
+    left: -3px;
     padding-top: 92px;
     padding-bottom: 115px;
+    background-color: #222222;
+}
+
+
+
+
+
+
+.services {
+    width: 934px;
+    height: 330px;
+    top: 192px;
+    left: 233px;
+
+}
+
+.services-title {
+    font-family: Montserrat;
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 75px;
+    letter-spacing: -1px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #222222;
+
+}
+
+.services-item {
+    width: 274px;
+    height: 185px;
+    top: 145px;
+
+}
+
+.services-description {
+    width: 304px;
+    height: 56px;
+    top: 129px;
+    left: -15px;
+    font-family: RobotoSlab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.35px;
+    text-align: center;
+    vertical-align: bottom;
+
+}
+.services-list {
+    width: 934px;
+height: 330px;
+top: 192px;
+left: 233px;
+
+}
+
+
+
+
+
+
+.contact-title {
+    width: 288px;
+    height: 49px;
+    top: 92px;
+    left: 576px;
+    font-family: var(--second-font);
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    vertical-align: bottom;
+    text-transform: uppercase;
 }
