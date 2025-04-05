@@ -5,15 +5,17 @@
     --other-family: "Bilbo Swash Caps", sans-serif;
     --header-text: rgba(254, 209, 54, 1);
     --services-title: rgba(34, 34, 34, 1);
-    --servixes-description: rgba(119, 119, 119, 1);
+    --services-description: rgba(119, 119, 119, 1);
     --contact-title: rgba(255, 255, 255, 1);
     --placeholder-color: rgba(187, 187, 187, 1);
     --button-color: rgba(254, 209, 54, 1);
 
 }
-* {
-    box-sizing: border-box;
-  }
+
+body {
+    background-color: var(--contact-title);
+    font-family: var(--font-family);
+}
 
 .container {
     width: 942px;
@@ -21,173 +23,171 @@
 }
 
 .header {
-    background-color: #00000000;
     padding-top: 44px;
-    padding-bottom: 109px;
-    padding-left: 137px;
-    padding-right: 130px;
+    padding-right: 9px;
+    padding-left: 9px;
 }
 
 .header-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-.header-navigation {
-    display:inline-block;
-    justify-content: center;
-    padding-left: 233px;
-    padding-right: 233px;
-}
-.logo-link {
-    width: 153px;
-    height: 53px;
-    top: -3px;
-    font-family: Bilbo Swash Caps;
-    font-weight: 400px;
+
+.header-logo {
+    font-family: var(--other-family);
     font-size: 36px;
     line-height: 41px;
+    font-weight: 400;
     letter-spacing: 1.3px;
-    text-align: center;
-    vertical-align: middle;
     color: var(--header-text);
-    padding-top: 17.5px;
-    padding-bottom: 272.3px;
-    padding-left: 356px;
-    padding-right: 255px;
 }
 
-
-.header-list {
+.header-navigation-list {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
-    align-items: center;
 }
 
-.header-link {
-    font-family: Montserrat;
-    font-weight: 400px;
+.header-navigation-link {
+    color: var(--header-text);
     font-size: 14px;
     line-height: 41px;
-    letter-spacing: 0px;
-    text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: var(--header-text);
-    display: flex;
-    
-}
-
-
-
-
-
-
-
-
-/* H E A D E R   E N D  */
-
-
-
-
-
-
-
-
-
-
-.services-list {
-    display: flex;
-    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
 }
 
 .services {
     padding-top: 109px;
     padding-bottom: 119px;
-    display: flex;
-}
-
-.contact {
-    width: 1404px;
-    height: 679px;
-    padding-top: 641px;
-    left: -3px;
-    padding-top: 92px;
-    padding-bottom: 115px;
-    background-color: #222222;
-}
-
-
-
-
-
-
-.services {
-    width: 934px;
-    height: 330px;
-    top: 192px;
-    left: 233px;
-
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 .services-title {
-    font-family: Montserrat;
-    font-weight: 700px;
     font-size: 40px;
+    font-weight: 700;
     line-height: 75px;
     letter-spacing: -1px;
+    color: var(--services-title);
     text-align: center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: #222222;
+    padding-bottom: 87.5px;
+}
 
+.services-list {
+    display: flex;
+    gap: 56px;
+    text-align: center;
 }
 
 .services-item {
-    width: 274px;
-    height: 185px;
-    top: 145px;
+    display: flex;
+    flex-direction: column;
+}
 
+.services-subtitle {
+    font-size: 18px;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: -0.45px;
 }
 
 .services-description {
-    width: 304px;
-    height: 56px;
-    top: 129px;
-    left: -15px;
-    font-family: RobotoSlab;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
     line-height: 100%;
-    letter-spacing: -0.35px;
-    text-align: center;
-    vertical-align: bottom;
-
-}
-.services-list {
-    width: 934px;
-height: 330px;
-top: 192px;
-left: 233px;
-
+    letter-spacing: -0.35;
+    font-family: var(--second-family);
+    color: var(--services-description);
 }
 
+.services-img {
+    margin: 0 auto;
+}
 
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
-
-
+.contact {
+    padding-top: 92px;
+    padding-bottom: 115px;
+    background-color: var(--services-title);
+}
 
 .contact-title {
-    width: 288px;
-    height: 49px;
-    top: 92px;
-    left: 576px;
-    font-family: var(--second-font);
-    font-weight: 700px;
+    color: var(--contact-title);
+    padding-top: 92px;
+    padding-bottom: 114px;
+    text-align: center;
     font-size: 40px;
+    font-weight: 700;
     line-height: 100%;
     letter-spacing: -1px;
-    vertical-align: bottom;
-    text-transform: uppercase;
+}
+
+.contact-form {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    padding-bottom: 27px;
+}
+
+.contact-form-list {
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+}
+
+.contact-input {
+    color: var(--placeholder-color);
+    padding: 14px 303px 22px 21px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.35px;
+    border: 1px solid;
+    border-radius: 3px;
+    border-color: var(--placeholder-color);
+}
+
+
+input::placeholder {
+    color: var(--placeholder-color);
+    color: var(--placeholder-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.35px;
+}
+
+
+.contact-textarea::placeholder {
+    font-size: 14px;
+    color: var(--placeholder-color);
+    line-height: 100%;
+    letter-spacing: -0.35px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.contact-textarea {
+    padding: 14px 310px 181px 20px;
+    border: 1px solid;
+    border-color: var(--placeholder-color);
+    border-radius: 2px;
+}
+
+.send-button {
+    margin: 0 auto;
+    background-color: var(--header-text);
+    color: var(--header-text);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    padding: 18px 33px 28px 33px;
 }
