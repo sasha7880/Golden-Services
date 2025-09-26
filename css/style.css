@@ -25,7 +25,6 @@ body {
 .header {
     padding-top: 44px;
     padding-right: 9px;
-    padding-left: 9px;
 }
 
 .header-container {
@@ -55,6 +54,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0;
+    padding: 10px;
 }
 
 .services {
@@ -94,9 +94,9 @@ body {
 
 .services-description {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 400px;
     line-height: 100%;
-    letter-spacing: -0.35;
+    letter-spacing: -0.35px;
     font-family: var(--second-family);
     color: var(--services-description);
 }
@@ -130,20 +130,19 @@ body {
 
 .contact-form {
     display: flex;
-    gap: 28px;
-    align-items: center;
-    padding-bottom: 27px;
+    flex-direction: column;
+    gap: 27px;
 }
 
-.contact-form-list {
+.contact-wrapper {
     display: flex;
-    gap: 28px;
-    flex-direction: column;
+    gap: 27px;
+    align-items: center;
 }
 
 .contact-input {
     color: var(--placeholder-color);
-    padding: 14px 303px 22px 21px;
+    padding: 12px 310px 21px 20px;
     font-size: 14px;
     font-weight: 700;
     line-height: 100%;
@@ -152,7 +151,6 @@ body {
     border-radius: 3px;
     border-color: var(--placeholder-color);
 }
-
 
 input::placeholder {
     color: var(--placeholder-color);
@@ -163,31 +161,31 @@ input::placeholder {
     letter-spacing: -0.35px;
 }
 
-
 .contact-textarea::placeholder {
     font-size: 14px;
     color: var(--placeholder-color);
-    line-height: 100%;
     letter-spacing: -0.35px;
     font-weight: 700;
     white-space: nowrap;
 }
 
-
 .contact-textarea {
-    padding: 14px 310px 181px 20px;
+    padding: 14px 286px 181px 22px;
     border: 1px solid;
     border-color: var(--placeholder-color);
     border-radius: 2px;
+    resize: none;
 }
 
 .send-button {
     margin: 0 auto;
     background-color: var(--header-text);
-    color: var(--header-text);
+    color: var(--contact-title);
     font-size: 18px;
     font-weight: 700;
-    line-height: 100%;
     letter-spacing: 0px;
     padding: 18px 33px 28px 33px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 27px;
 }
