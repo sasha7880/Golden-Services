@@ -15,6 +15,7 @@
 body {
     background-color: var(--contact-title);
     font-family: var(--font-family);
+    font-weight: 700;
 }
 
 .container {
@@ -24,7 +25,7 @@ body {
 
 .header {
     padding-top: 44px;
-    padding-right: 9px;
+
 }
 
 .header-container {
@@ -66,7 +67,6 @@ body {
 
 .services-title {
     font-size: 40px;
-    font-weight: 700;
     line-height: 75px;
     letter-spacing: -1px;
     color: var(--services-title);
@@ -88,7 +88,6 @@ body {
 .services-subtitle {
     font-size: 18px;
     line-height: 75px;
-    font-weight: 700;
     letter-spacing: -0.45px;
 }
 
@@ -99,6 +98,7 @@ body {
     letter-spacing: -0.35px;
     font-family: var(--second-family);
     color: var(--services-description);
+    align-items: center;
 }
 
 .services-img {
@@ -119,11 +119,9 @@ body {
 
 .contact-title {
     color: var(--contact-title);
-    padding-top: 92px;
     padding-bottom: 114px;
     text-align: center;
     font-size: 40px;
-    font-weight: 700;
     line-height: 100%;
     letter-spacing: -1px;
 }
@@ -142,13 +140,12 @@ body {
 
 .contact-input {
     color: var(--placeholder-color);
-    padding: 12px 310px 21px 20px;
+    padding: 12px 310px 20px 21px;
     font-size: 14px;
-    font-weight: 700;
     line-height: 100%;
     letter-spacing: -0.35px;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 1px;
     border-color: var(--placeholder-color);
 }
 
@@ -156,7 +153,6 @@ input::placeholder {
     color: var(--placeholder-color);
     color: var(--placeholder-color);
     font-size: 14px;
-    font-weight: 700;
     line-height: 100%;
     letter-spacing: -0.35px;
 }
@@ -165,7 +161,6 @@ input::placeholder {
     font-size: 14px;
     color: var(--placeholder-color);
     letter-spacing: -0.35px;
-    font-weight: 700;
     white-space: nowrap;
 }
 
@@ -173,8 +168,9 @@ input::placeholder {
     padding: 14px 286px 181px 22px;
     border: 1px solid;
     border-color: var(--placeholder-color);
-    border-radius: 2px;
+    border-radius: 1px;
     resize: none;
+
 }
 
 .send-button {
@@ -182,10 +178,12 @@ input::placeholder {
     background-color: var(--header-text);
     color: var(--contact-title);
     font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     padding: 18px 33px 28px 33px;
     border: 0;
     cursor: pointer;
     margin-top: 27px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: var(--font-family);
 }
