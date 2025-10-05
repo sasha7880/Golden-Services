@@ -62,7 +62,7 @@ body {
     padding-top: 109px;
     padding-bottom: 119px;
     padding-left: 4px;
-    padding-right: 4px;
+
 }
 
 .services-title {
@@ -76,14 +76,17 @@ body {
 
 .services-list {
     display: flex;
-    gap: 56px;
+    gap: 60px;
     text-align: center;
+    flex-wrap: wrap; 
+    
 }
 
 .services-item {
     display: flex;
     flex-direction: column;
 }
+
 .services-icon {
     fill: var(--header-text);
     padding: 13px;
@@ -92,6 +95,7 @@ body {
     width: 70px;
     height: 69px;
     margin: 0 auto;
+
 }
 
 .services-subtitle {
@@ -118,12 +122,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .contact {
     padding-top: 92px;
     padding-bottom: 115px;
     background-color: var(--services-title);
+    width: 100%;
 }
 
 .contact-title {
@@ -133,66 +139,100 @@ body {
     font-size: 40px;
     line-height: 100%;
     letter-spacing: -1px;
+    margin-bottom: 0;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 27px;
+    width: 942px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+.contact-form_wrapper {
+    display: flex;
+    gap: 28px;
+    width: 100%;
 }
 
 .contact-wrapper {
     display: flex;
-    gap: 27px;
-    align-items: center;
+    flex-direction: column;
+    gap: 28px;
+    width: 455px;
 }
 
 .contact-input {
     color: var(--placeholder-color);
-    padding: 12px 310px 20px 21px;
+    padding: 18px 20px;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: -0.35px;
     border: 1px solid;
     border-radius: 1px;
     border-color: var(--placeholder-color);
+    background: white;
+    width: 83%;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 28px;
 }
 
-input::placeholder {
-    color: var(--placeholder-color);
+.contact-input::placeholder {
     color: var(--placeholder-color);
     font-size: 14px;
     line-height: 100%;
     letter-spacing: -0.35px;
-}
-
-.contact-textarea::placeholder {
-    font-size: 14px;
-    color: var(--placeholder-color);
-    letter-spacing: -0.35px;
-    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 700;
 }
 
 .contact-textarea {
-    padding: 14px 286px 181px 22px;
+    padding: 10px 12пешpx;
+    margin-left: -100px;
     border: 1px solid;
     border-color: var(--placeholder-color);
     border-radius: 1px;
     resize: none;
-
+    background: white;
+    width: 455px;
+    height: 225px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.contact-textarea::placeholder {
+    font-size: 14px;
+    color: var(--placeholder-color);
+    letter-spacing: -0.35px;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-weight: 700;
 }
 
 .send-button {
-    margin: 0 auto;
     background-color: var(--header-text);
     color: var(--contact-title);
     font-size: 18px;
     letter-spacing: 1px;
-    padding: 18px 33px 28px 33px;
+    padding: 23px 33px;
     border: 0;
     cursor: pointer;
     margin-top: 27px;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: var(--font-family);
+    font-weight: 700;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 242px;
+    height: 68px;
 }
