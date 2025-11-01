@@ -9,13 +9,13 @@
     --contact-title: rgba(255, 255, 255, 1);
     --placeholder-color: rgba(187, 187, 187, 1);
     --button-color: rgba(254, 209, 54, 1);
+
 }
 
 body {
     background-color: var(--contact-title);
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 14px;
 }
 
 .container {
@@ -25,6 +25,7 @@ body {
 
 .header {
     padding-top: 44px;
+
 }
 
 .header-container {
@@ -49,6 +50,7 @@ body {
 
 .header-navigation-link {
     color: var(--header-text);
+    font-size: 14px;
     line-height: 41px;
     font-weight: 400;
     font-size: 14px;
@@ -59,6 +61,8 @@ body {
 .services {
     padding-top: 109px;
     padding-bottom: 119px;
+    padding-left: 4px;
+
 }
 
 .services-title {
@@ -72,8 +76,10 @@ body {
 
 .services-list {
     display: flex;
-    gap: 56px;
+    gap: 60px;
     text-align: center;
+    flex-wrap: wrap; 
+    
 }
 
 .services-item {
@@ -89,7 +95,7 @@ body {
     width: 70px;
     height: 69px;
     margin: 0 auto;
-    color: inherit;
+
 }
 
 .services-subtitle {
@@ -99,17 +105,17 @@ body {
 }
 
 .services-description {
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 100%;
+    letter-spacing: -0.35px;
     font-family: var(--second-family);
     color: var(--services-description);
-    letter-spacing: -0.35px;
+    align-items: center;
 }
 
-.services-span {
-    font-size: 38px;
-    border: 1px solid var(--header-text);
-    border-radius: 100%;
-    padding: 14px;
+.services-img {
+    margin: 0 auto;
 }
 
 .contact {
@@ -118,80 +124,72 @@ body {
     background-color: var(--services-title);
 }
 
+
+
 .contact-title {
-    color: var(--contact-title);
-    padding-bottom: 114px;
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
 }
 
 .contact-form {
-    display: flex;
-    gap: 27px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact-wrapper {
-    display: flex;
-    gap: 27px;
-    flex-direction: column;
+.contact-form_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.contact-form-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
+.contact-wparrer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
 }
 
-.contact-input {
-    color: var(--placeholder-color);
-    width: 455px;
-    padding: 12px 20px 21px 20px;
-    font-size: 14px;
-    letter-spacing: -0.35px;
-    border: 1px solid;
-    border-radius: 3px;
-    border-color: var(--placeholder-color);
-    font-weight: inherit;
-    line-height: 1;
+.contact-label {
+  width: 100%;
 }
 
-input::placeholder {
-    color: var(--placeholder-color);
-    font-size: inherit;
-    letter-spacing: -0.35px;
-}
-
-.contact-textarea::placeholder {
-    font-size: inherit;
-    color: var(--placeholder-color);
-    letter-spacing: -0.35px;
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
 }
 
 .contact-textarea {
-    padding-block: 14px;
-    padding-inline: 22px;
-    width: 458px;
-    height: 212px;
-    border: 1px solid;
-    border-color: var(--placeholder-color);
-    border-radius: 2px;
-    resize: none;
-    font-weight: inherit;
-    font-size: 14px;
-    font-family: inherit;
+  flex: 1;
+  min-height: 150px;
+  resize: none;
 }
 
+/* Send Button */
 .send-button {
-    margin: 0 auto;
-    background-color: var(--header-text);
-    color: var(--contact-title);
-    font-size: 18px;
-    letter-spacing: 0px;
-    padding: 18px 46px 28px 46px;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: inherit;
+  background-color: var(--button-color); 
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #e5b800;
 }
